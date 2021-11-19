@@ -100,21 +100,44 @@ body {
   top: 6.5rem;
   width: 100%;
   flex-direction: column;
-  background-color: #fff;
+  background: #fff;
   padding: 2.4rem 0 0 0;
   z-index: 2;
-  opacity: 0;
-  pointer-events: none;
+  transform: translateX(-150%);
+  transition: all var(--transition-time) ease-in-out;
+}
+
+.header-nav::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  right: 0;
+  width: 0;
+  height: 0;
+  /* border-color: transparent; */
+  border-top: 0;
+  border-left: 1.5rem solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 1.5625rem solid var(--white);
 }
 
 .header-nav.open {
-  opacity: 1;
-  pointer-events: all;
+  transform: translateX(0%);
 }
 
 .hamburger {
   background: none;
   border: none;
+  width: 1.3125rem;
+  height: 1.0625rem;
+}
+
+.hamburger-img {
+  width: 100%;
+}
+
+.hamburger-img path {
+  fill: var(--white);
 }
 
 .header-nav-link {
