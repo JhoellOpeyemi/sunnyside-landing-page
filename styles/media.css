@@ -58,7 +58,7 @@
     display: none;
   }
 
-  .header-nav {
+  #header-nav {
     position: relative;
     top: 0;
     width: 100%;
@@ -73,7 +73,7 @@
     transform: translateX(0%);
   }
 
-  .header-nav::before {
+  #header-nav::before {
     display: none;
   }
 
