@@ -70,6 +70,11 @@
     z-index: 1;
     opacity: 1;
     pointer-events: all;
+    transform: translateX(0%);
+  }
+
+  .header-nav::before {
+    display: none;
   }
 
   .header-nav-link:not(:last-child) {
