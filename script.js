@@ -1,4 +1,4 @@
-const headerNav = document.querySelector(".header-nav");
+const headerNav = document.querySelector("#header-nav");
 const hamburger = document.querySelector(".hamburger");
 const hamburgerImg = document.querySelector(".hamburger-img");
 
